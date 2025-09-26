@@ -1,0 +1,25 @@
+﻿# VS / build stuff
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+
+# Rider
+.idea/
+
+# Others
+*.rsuser
+*.cache
+*.log
+*.tmp
+/
+_TestResults/
+TestResult*/
+[Tt]est[Rr]esult*/

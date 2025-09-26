@@ -1,0 +1,154 @@
+2025-09-17 10:37:46.087 +03:00 [INF] Starting Inventory Service
+2025-09-17 10:37:46.216 +03:00 [INF] Now listening on: http://localhost:5119
+2025-09-17 10:37:46.223 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-17 10:37:46.225 +03:00 [INF] Hosting environment: Development
+2025-09-17 10:37:46.227 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-17 10:56:08.635 +03:00 [INF] Starting Inventory Service
+2025-09-17 10:56:08.757 +03:00 [INF] Now listening on: http://localhost:5119
+2025-09-17 10:56:08.763 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-17 10:56:08.765 +03:00 [INF] Hosting environment: Development
+2025-09-17 10:56:08.766 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-17 10:56:27.300 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-17 10:56:27.500 +03:00 [INF] GET /api/inventory - Getting all inventory items
+2025-09-17 10:56:27.506 +03:00 [INF] Getting all inventory items
+2025-09-17 10:56:28.705 +03:00 [INF] Successfully retrieved 1 inventory items
+2025-09-17 10:57:35.273 +03:00 [INF] POST /api/inventory - Creating new inventory item: telecom (Admin only)
+2025-09-17 10:57:35.280 +03:00 [INF] Creating new inventory item: telecom
+2025-09-17 10:57:35.344 +03:00 [INF] Successfully created inventory item: telecom with ID: 4
+2025-09-17 10:58:17.889 +03:00 [INF] GET /api/inventory/4 - Getting item by ID
+2025-09-17 10:58:17.893 +03:00 [INF] Getting inventory item by ID: 4
+2025-09-17 10:58:17.900 +03:00 [INF] Successfully retrieved inventory item with ID: 4
+2025-09-17 10:59:32.294 +03:00 [INF] DELETE /api/inventory/4 - Deleting inventory item (Admin only)
+2025-09-17 10:59:32.297 +03:00 [INF] Deleting inventory item with ID: 4 by user: 6
+2025-09-17 10:59:32.309 +03:00 [INF] Successfully deleted inventory item with ID: 4
+2025-09-17 10:59:39.726 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-17 10:59:39.732 +03:00 [INF] Getting all stock records
+2025-09-17 10:59:39.746 +03:00 [WRN] Failed to get all stock records. ErrorCode: 500
+2025-09-17 10:59:52.165 +03:00 [INF] DELETE /api/inventory/1/stock - Deleting stock for item (Admin only)
+2025-09-17 10:59:52.168 +03:00 [INF] Deleting stock for item ID: 1 by user: 6
+2025-09-17 10:59:52.176 +03:00 [WRN] Stock not found for item ID: 1
+2025-09-17 10:59:58.237 +03:00 [INF] DELETE /api/inventory/2/stock - Deleting stock for item (Admin only)
+2025-09-17 10:59:58.239 +03:00 [INF] Deleting stock for item ID: 2 by user: 6
+2025-09-17 10:59:58.243 +03:00 [WRN] Stock not found for item ID: 2
+2025-09-17 11:00:24.845 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-17 11:00:24.856 +03:00 [INF] Getting all stock records
+2025-09-17 11:00:24.864 +03:00 [WRN] Failed to get all stock records. ErrorCode: 500
+2025-09-17 11:09:42.799 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-17 11:09:42.800 +03:00 [INF] Getting all stock records
+2025-09-17 11:09:42.929 +03:00 [WRN] Failed to get all stock records. ErrorCode: 500
+2025-09-17 11:14:41.739 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-17 11:14:41.742 +03:00 [INF] Getting all stock records
+2025-09-17 11:14:41.746 +03:00 [WRN] Failed to get all stock records. ErrorCode: 500
+2025-09-17 11:19:42.470 +03:00 [INF] Starting Inventory Service
+2025-09-17 11:19:42.589 +03:00 [INF] Now listening on: http://localhost:5119
+2025-09-17 11:19:42.594 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-17 11:19:42.596 +03:00 [INF] Hosting environment: Development
+2025-09-17 11:19:42.597 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-17 11:34:57.542 +03:00 [INF] Starting Inventory Service
+2025-09-17 11:34:57.658 +03:00 [INF] Now listening on: http://localhost:5119
+2025-09-17 11:34:57.663 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-17 11:34:57.665 +03:00 [INF] Hosting environment: Development
+2025-09-17 11:34:57.666 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-17 11:35:29.482 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-17 11:35:29.648 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-17 11:35:29.652 +03:00 [INF] Getting all stock records
+2025-09-17 11:35:30.679 +03:00 [WRN] Failed to get all stock records. ErrorCode: 500
+2025-09-17 11:43:22.135 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-17 11:43:22.137 +03:00 [INF] Getting all stock records
+2025-09-17 11:43:22.275 +03:00 [WRN] Failed to get all stock records. ErrorCode: 500
+2025-09-17 11:48:49.322 +03:00 [INF] Starting Inventory Service
+2025-09-17 11:48:49.448 +03:00 [INF] Now listening on: http://localhost:5119
+2025-09-17 11:48:49.454 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-17 11:48:49.456 +03:00 [INF] Hosting environment: Development
+2025-09-17 11:48:49.458 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-17 12:02:59.056 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-17 12:02:59.224 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-17 12:02:59.229 +03:00 [INF] Getting all stock records
+2025-09-17 12:03:00.181 +03:00 [WRN] Failed to get all stock records. ErrorCode: 500
+2025-09-17 12:03:24.684 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-17 12:03:24.687 +03:00 [INF] Getting all stock records
+2025-09-17 12:03:24.694 +03:00 [WRN] Failed to get all stock records. ErrorCode: 500
+2025-09-17 12:08:14.995 +03:00 [INF] Starting Inventory Service
+2025-09-17 12:08:15.125 +03:00 [INF] Now listening on: http://localhost:5119
+2025-09-17 12:08:15.133 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-17 12:08:15.135 +03:00 [INF] Hosting environment: Development
+2025-09-17 12:08:15.137 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-17 12:08:47.352 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-17 12:08:47.516 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-17 12:08:47.521 +03:00 [INF] Getting all stock records
+2025-09-17 12:08:48.433 +03:00 [WRN] Failed to get all stock records. ErrorCode: 500
+2025-09-17 12:27:00.931 +03:00 [INF] Starting Inventory Service
+2025-09-17 12:27:01.044 +03:00 [INF] Now listening on: http://localhost:5119
+2025-09-17 12:27:01.048 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-17 12:27:01.050 +03:00 [INF] Hosting environment: Development
+2025-09-17 12:27:01.051 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-17 12:27:59.099 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-17 12:27:59.264 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-17 12:27:59.269 +03:00 [INF] Getting all stock records
+2025-09-17 12:28:00.410 +03:00 [INF] Successfully retrieved 1 stock records
+2025-09-17 12:28:16.643 +03:00 [INF] GET /api/inventory - Getting all inventory items
+2025-09-17 12:28:16.647 +03:00 [INF] Getting all inventory items
+2025-09-17 12:28:16.682 +03:00 [INF] Successfully retrieved 1 inventory items
+2025-09-17 12:30:10.604 +03:00 [INF] POST /api/inventory - Creating new inventory item: water (Admin only)
+2025-09-17 12:30:10.608 +03:00 [INF] Creating new inventory item: water
+2025-09-17 12:30:10.665 +03:00 [INF] Successfully created inventory item: water with ID: 5
+2025-09-17 12:30:43.387 +03:00 [INF] GET /api/inventory/5 - Getting item by ID
+2025-09-17 12:30:43.390 +03:00 [INF] Getting inventory item by ID: 5
+2025-09-17 12:30:43.397 +03:00 [INF] Successfully retrieved inventory item with ID: 5
+2025-09-17 12:31:25.910 +03:00 [INF] PUT /api/inventory/6 - Updating inventory item (Admin only)
+2025-09-17 12:31:25.914 +03:00 [INF] Updating inventory item with ID: 6
+2025-09-17 12:31:25.924 +03:00 [WRN] Item not found with ID: 6
+2025-09-17 12:31:40.468 +03:00 [INF] PUT /api/inventory/5 - Updating inventory item (Admin only)
+2025-09-17 12:31:40.471 +03:00 [INF] Updating inventory item with ID: 5
+2025-09-17 12:31:40.478 +03:00 [INF] Successfully updated inventory item with ID: 5
+2025-09-17 12:31:51.660 +03:00 [INF] DELETE /api/inventory/5 - Deleting inventory item (Admin only)
+2025-09-17 12:31:51.671 +03:00 [INF] Deleting inventory item with ID: 5 by user: 6
+2025-09-17 12:31:51.683 +03:00 [INF] Successfully deleted inventory item with ID: 5
+2025-09-17 12:31:56.838 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-17 12:31:56.839 +03:00 [INF] Getting all stock records
+2025-09-17 12:31:56.842 +03:00 [INF] Successfully retrieved 1 stock records
+2025-09-17 12:32:38.025 +03:00 [INF] DELETE /api/inventory/3/stock - Deleting stock for item (Admin only)
+2025-09-17 12:32:38.028 +03:00 [INF] Deleting stock for item ID: 3 by user: 6
+2025-09-17 12:32:38.035 +03:00 [INF] Successfully deleted stock for item ID: 3
+2025-09-17 12:36:32.666 +03:00 [INF] GET /api/inventory - Getting all inventory items
+2025-09-17 12:36:32.668 +03:00 [INF] Getting all inventory items
+2025-09-17 12:36:32.810 +03:00 [INF] Successfully retrieved 1 inventory items
+2025-09-17 12:37:12.834 +03:00 [INF] GET /api/inventory/1 - Getting item by ID
+2025-09-17 12:37:12.841 +03:00 [INF] Getting inventory item by ID: 1
+2025-09-17 12:37:12.854 +03:00 [WRN] Failed to get item with ID: 1. ErrorCode: 500
+2025-09-17 12:39:47.931 +03:00 [INF] GET /api/inventory - Getting all inventory items
+2025-09-17 12:39:47.933 +03:00 [INF] Getting all inventory items
+2025-09-17 12:39:47.940 +03:00 [INF] Successfully retrieved 1 inventory items
+2025-09-17 12:40:42.122 +03:00 [INF] GET /api/inventory/1 - Getting item by ID
+2025-09-17 12:40:42.123 +03:00 [INF] Getting inventory item by ID: 1
+2025-09-17 12:40:42.130 +03:00 [WRN] Failed to get item with ID: 1. ErrorCode: 500
+2025-09-17 12:40:46.640 +03:00 [INF] GET /api/inventory/2 - Getting item by ID
+2025-09-17 12:40:46.642 +03:00 [INF] Getting inventory item by ID: 2
+2025-09-17 12:40:46.653 +03:00 [WRN] Failed to get item with ID: 2. ErrorCode: 500
+2025-09-17 12:40:52.677 +03:00 [INF] GET /api/inventory/3 - Getting item by ID
+2025-09-17 12:40:52.679 +03:00 [INF] Getting inventory item by ID: 3
+2025-09-17 12:40:52.687 +03:00 [INF] Successfully retrieved inventory item with ID: 3
+2025-09-17 12:41:06.916 +03:00 [INF] GET /api/inventory/1 - Getting item by ID
+2025-09-17 12:41:06.918 +03:00 [INF] Getting inventory item by ID: 1
+2025-09-17 12:41:06.923 +03:00 [WRN] Failed to get item with ID: 1. ErrorCode: 500
+2025-09-17 12:41:13.631 +03:00 [INF] GET /api/inventory/3 - Getting item by ID
+2025-09-17 12:41:13.633 +03:00 [INF] Getting inventory item by ID: 3
+2025-09-17 12:41:13.644 +03:00 [INF] Successfully retrieved inventory item with ID: 3
+2025-09-17 15:03:03.684 +03:00 [INF] Starting Inventory Service
+2025-09-17 15:03:03.934 +03:00 [INF] Now listening on: https://localhost:5002
+2025-09-17 15:03:03.939 +03:00 [INF] Now listening on: http://localhost:5005
+2025-09-17 15:03:03.943 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-17 15:03:03.944 +03:00 [INF] Hosting environment: Development
+2025-09-17 15:03:03.946 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-17 15:08:46.560 +03:00 [INF] Starting Inventory Service
+2025-09-17 15:08:46.770 +03:00 [INF] Now listening on: https://localhost:5002
+2025-09-17 15:08:46.774 +03:00 [INF] Now listening on: http://localhost:5005
+2025-09-17 15:08:46.778 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-17 15:08:46.781 +03:00 [INF] Hosting environment: Development
+2025-09-17 15:08:46.783 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-17 15:20:04.904 +03:00 [INF] Starting Inventory Service
+2025-09-17 15:20:05.105 +03:00 [INF] Now listening on: https://localhost:5002
+2025-09-17 15:20:05.109 +03:00 [INF] Now listening on: http://localhost:5005
+2025-09-17 15:20:05.113 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-17 15:20:05.116 +03:00 [INF] Hosting environment: Development
+2025-09-17 15:20:05.117 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API

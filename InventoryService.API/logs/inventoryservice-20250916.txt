@@ -1,0 +1,100 @@
+2025-09-16 10:28:18.327 +03:00 [INF] Starting Inventory Service
+2025-09-16 10:28:18.502 +03:00 [INF] Now listening on: http://localhost:5119
+2025-09-16 10:28:18.509 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-16 10:28:18.511 +03:00 [INF] Hosting environment: Development
+2025-09-16 10:28:18.513 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-16 12:14:06.126 +03:00 [INF] Starting Inventory Service
+2025-09-16 12:14:06.338 +03:00 [INF] Now listening on: http://localhost:5119
+2025-09-16 12:14:06.344 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-16 12:14:06.347 +03:00 [INF] Hosting environment: Development
+2025-09-16 12:14:06.349 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-16 12:14:24.434 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-16 12:21:23.332 +03:00 [INF] Starting Inventory Service
+2025-09-16 12:21:23.464 +03:00 [INF] Now listening on: http://localhost:5119
+2025-09-16 12:21:23.471 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-16 12:21:23.473 +03:00 [INF] Hosting environment: Development
+2025-09-16 12:21:23.475 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-16 12:27:03.299 +03:00 [INF] Starting Inventory Service
+2025-09-16 12:27:03.412 +03:00 [INF] Now listening on: http://localhost:5119
+2025-09-16 12:27:03.417 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-16 12:27:03.419 +03:00 [INF] Hosting environment: Development
+2025-09-16 12:27:03.421 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-16 12:27:33.143 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-16 12:27:33.340 +03:00 [INF] GET /api/inventory - Getting all inventory items
+2025-09-16 12:27:33.345 +03:00 [INF] Getting all inventory items
+2025-09-16 12:27:33.873 +03:00 [ERR] Error occurred while getting all inventory items
+Npgsql.PostgresException (0x80004005): 53300: sorry, too many clients already
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.Authenticate(String username, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at InventoryService.Persistence.UnitOfWork.UnitOfWork.GetConnection() in C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.Persistence\UnitOfWork\UnitOfWork.cs:line 49
+   at InventoryService.Persistence.UnitOfWork.UnitOfWork.get_InventoryRepository() in C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.Persistence\UnitOfWork\UnitOfWork.cs:line 30
+   at InventoryService.Business.Services.InventoryServiceImpl.GetAllItemsAsync() in C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.Business\Services\InventoryService.cs:line 25
+  Exception data:
+    Severity: FATAL
+    SqlState: 53300
+    MessageText: sorry, too many clients already
+    File: proc.c
+    Line: 357
+    Routine: InitProcess
+2025-09-16 12:29:56.662 +03:00 [INF] GET /api/inventory - Getting all inventory items
+2025-09-16 12:29:56.664 +03:00 [INF] Getting all inventory items
+2025-09-16 12:29:57.307 +03:00 [INF] Successfully retrieved 0 inventory items
+2025-09-16 12:30:19.418 +03:00 [INF] POST /api/inventory - Creating new inventory item: string
+2025-09-16 12:30:19.422 +03:00 [INF] Creating new inventory item: string
+2025-09-16 12:30:19.462 +03:00 [WRN] Failed to create item: string. ErrorCode: 500
+2025-09-16 12:30:40.695 +03:00 [INF] POST /api/inventory - Creating new inventory item: string
+2025-09-16 12:30:40.697 +03:00 [INF] Creating new inventory item: string
+2025-09-16 12:30:40.703 +03:00 [WRN] Failed to create item: string. ErrorCode: 500
+2025-09-16 12:32:18.215 +03:00 [INF] POST /api/inventory - Creating new inventory item: water
+2025-09-16 12:32:18.217 +03:00 [INF] Creating new inventory item: water
+2025-09-16 12:32:18.221 +03:00 [WRN] Failed to create item: water. ErrorCode: 500
+2025-09-16 12:32:21.859 +03:00 [INF] POST /api/inventory - Creating new inventory item: water
+2025-09-16 12:32:21.862 +03:00 [INF] Creating new inventory item: water
+2025-09-16 12:32:21.867 +03:00 [WRN] Failed to create item: water. ErrorCode: 500
+2025-09-16 12:32:22.698 +03:00 [INF] POST /api/inventory - Creating new inventory item: water
+2025-09-16 12:32:22.704 +03:00 [INF] Creating new inventory item: water
+2025-09-16 12:32:22.707 +03:00 [WRN] Failed to create item: water. ErrorCode: 500
+2025-09-16 12:34:28.105 +03:00 [INF] GET /api/inventory/1 - Getting item by ID
+2025-09-16 12:34:28.108 +03:00 [INF] Getting inventory item by ID: 1
+2025-09-16 12:34:28.119 +03:00 [WRN] Failed to get item with ID: 1. ErrorCode: 500
+2025-09-16 12:35:13.292 +03:00 [INF] Application is shutting down...
+2025-09-16 12:35:29.077 +03:00 [INF] Starting Inventory Service
+2025-09-16 12:35:29.202 +03:00 [INF] Now listening on: http://localhost:5119
+2025-09-16 12:35:29.207 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-16 12:35:29.209 +03:00 [INF] Hosting environment: Development
+2025-09-16 12:35:29.211 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-16 12:36:30.086 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-16 12:36:30.233 +03:00 [INF] GET /api/inventory - Getting all inventory items
+2025-09-16 12:36:30.237 +03:00 [INF] Getting all inventory items
+2025-09-16 12:36:30.925 +03:00 [INF] Successfully retrieved 0 inventory items
+2025-09-16 12:36:37.377 +03:00 [INF] POST /api/inventory - Creating new inventory item: string
+2025-09-16 12:36:37.383 +03:00 [INF] Creating new inventory item: string
+2025-09-16 12:36:37.433 +03:00 [WRN] Failed to create item: string. ErrorCode: 500
+2025-09-16 12:36:39.693 +03:00 [INF] POST /api/inventory - Creating new inventory item: string
+2025-09-16 12:36:39.696 +03:00 [INF] Creating new inventory item: string
+2025-09-16 12:36:39.701 +03:00 [WRN] Failed to create item: string. ErrorCode: 500
+2025-09-16 12:48:13.766 +03:00 [INF] Starting Inventory Service
+2025-09-16 12:48:13.888 +03:00 [INF] Now listening on: http://localhost:5119
+2025-09-16 12:48:13.893 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-16 12:48:13.895 +03:00 [INF] Hosting environment: Development
+2025-09-16 12:48:13.896 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-16 12:48:36.772 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-16 12:54:57.510 +03:00 [INF] Starting Inventory Service
+2025-09-16 12:54:57.630 +03:00 [INF] Now listening on: http://localhost:5119
+2025-09-16 12:54:57.636 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-16 12:54:57.637 +03:00 [INF] Hosting environment: Development
+2025-09-16 12:54:57.639 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-16 12:55:16.253 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-16 12:55:16.437 +03:00 [INF] GET /api/inventory - Getting all inventory items
+2025-09-16 12:55:16.441 +03:00 [INF] Getting all inventory items
+2025-09-16 12:55:17.436 +03:00 [INF] Successfully retrieved 1 inventory items
+2025-09-16 12:56:55.773 +03:00 [INF] POST /api/inventory - Creating new inventory item: batata
+2025-09-16 12:56:55.777 +03:00 [INF] Creating new inventory item: batata
+2025-09-16 12:56:55.825 +03:00 [WRN] Failed to create item: batata. ErrorCode: 500

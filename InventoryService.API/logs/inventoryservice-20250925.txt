@@ -1,0 +1,60 @@
+2025-09-25 10:34:13.375 +03:00 [INF] Starting Inventory Service
+2025-09-25 10:34:13.624 +03:00 [INF] Now listening on: https://localhost:5002
+2025-09-25 10:34:13.628 +03:00 [INF] Now listening on: http://localhost:5005
+2025-09-25 10:34:13.634 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 10:34:13.635 +03:00 [INF] Hosting environment: Development
+2025-09-25 10:34:13.637 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-25 10:35:21.781 +03:00 [INF] GET /api/inventory - Getting all inventory items
+2025-09-25 10:35:21.788 +03:00 [INF] Getting all inventory items
+2025-09-25 10:35:22.981 +03:00 [INF] Successfully retrieved 2 inventory items
+2025-09-25 10:37:49.434 +03:00 [INF] POST /api/inventory - Creating new inventory item: iphone15 (Admin only)
+2025-09-25 10:37:49.440 +03:00 [INF] Creating new inventory item: iphone15
+2025-09-25 10:37:49.511 +03:00 [INF] Successfully created inventory item: iphone15 with ID: 3
+2025-09-25 10:39:37.287 +03:00 [INF] GET /api/inventory/3 - Getting item by ID
+2025-09-25 10:39:37.291 +03:00 [INF] Getting inventory item by ID: 3
+2025-09-25 10:39:37.300 +03:00 [INF] Successfully retrieved inventory item with ID: 3
+2025-09-25 10:39:51.505 +03:00 [INF] DELETE /api/inventory/3 - Deleting inventory item (Admin only)
+2025-09-25 10:39:51.509 +03:00 [INF] Deleting inventory item with ID: 3 by user: 9
+2025-09-25 10:39:51.521 +03:00 [INF] Successfully deleted inventory item with ID: 3
+2025-09-25 10:40:43.538 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-25 10:40:43.541 +03:00 [INF] Getting all stock records
+2025-09-25 10:40:43.818 +03:00 [INF] Successfully retrieved 2 stock records
+2025-09-25 10:44:13.661 +03:00 [INF] POST /api/inventory - Creating new inventory item: iphone17 (Admin only)
+2025-09-25 10:44:13.664 +03:00 [INF] Creating new inventory item: iphone17
+2025-09-25 10:44:13.676 +03:00 [INF] Successfully created inventory item: iphone17 with ID: 4
+2025-09-25 10:46:48.036 +03:00 [INF] PUT /api/inventory/1 - Updating inventory item (Admin only)
+2025-09-25 10:46:48.040 +03:00 [INF] Updating inventory item with ID: 1
+2025-09-25 10:46:48.207 +03:00 [INF] Successfully updated inventory item with ID: 1
+2025-09-25 10:48:28.286 +03:00 [INF] PUT /api/inventory/1 - Updating inventory item (Admin only)
+2025-09-25 10:48:28.288 +03:00 [INF] Updating inventory item with ID: 1
+2025-09-25 10:48:28.295 +03:00 [INF] Successfully updated inventory item with ID: 1
+2025-09-25 10:51:40.513 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-25 10:51:40.515 +03:00 [INF] Getting all stock records
+2025-09-25 10:51:40.525 +03:00 [INF] Successfully retrieved 3 stock records
+2025-09-25 10:51:52.251 +03:00 [INF] GET /api/inventory - Getting all inventory items
+2025-09-25 10:51:52.253 +03:00 [INF] Getting all inventory items
+2025-09-25 10:51:52.618 +03:00 [INF] Successfully retrieved 3 inventory items
+2025-09-25 10:52:12.128 +03:00 [INF] GET /api/inventory - Getting all inventory items
+2025-09-25 10:52:12.129 +03:00 [INF] Getting all inventory items
+2025-09-25 10:52:12.146 +03:00 [INF] Successfully retrieved 3 inventory items
+2025-09-25 10:52:39.248 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-25 10:52:39.250 +03:00 [INF] Getting all stock records
+2025-09-25 10:52:39.256 +03:00 [INF] Successfully retrieved 3 stock records
+2025-09-25 11:08:56.943 +03:00 [INF] Starting Inventory Service
+2025-09-25 11:08:57.305 +03:00 [INF] Now listening on: https://localhost:5002
+2025-09-25 11:08:57.313 +03:00 [INF] Now listening on: http://localhost:5005
+2025-09-25 11:08:57.320 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 11:08:57.323 +03:00 [INF] Hosting environment: Development
+2025-09-25 11:08:57.325 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-25 12:56:53.143 +03:00 [INF] Starting Inventory Service
+2025-09-25 12:56:53.309 +03:00 [INF] Now listening on: https://localhost:5002
+2025-09-25 12:56:53.312 +03:00 [INF] Now listening on: http://localhost:5005
+2025-09-25 12:56:53.316 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 12:56:53.318 +03:00 [INF] Hosting environment: Development
+2025-09-25 12:56:53.319 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-25 13:10:27.175 +03:00 [INF] POST /api/inventory - Creating new inventory item: nokia (Admin only)
+2025-09-25 13:10:27.180 +03:00 [INF] Creating new inventory item: nokia
+2025-09-25 13:10:28.082 +03:00 [INF] Successfully created inventory item: nokia with ID: 5
+2025-09-25 13:19:15.295 +03:00 [INF] PUT /api/inventory/2 - Updating inventory item (Admin only)
+2025-09-25 13:19:15.299 +03:00 [INF] Updating inventory item with ID: 2
+2025-09-25 13:19:15.449 +03:00 [INF] Successfully updated inventory item with ID: 2

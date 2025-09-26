@@ -1,0 +1,12 @@
+2025-09-22 12:07:06.026 +03:00 [INF] Starting Inventory Service
+2025-09-22 12:07:06.291 +03:00 [INF] Now listening on: https://localhost:5002
+2025-09-22 12:07:06.294 +03:00 [INF] Now listening on: http://localhost:5005
+2025-09-22 12:07:06.298 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-22 12:07:06.299 +03:00 [INF] Hosting environment: Development
+2025-09-22 12:07:06.301 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-22 12:13:32.315 +03:00 [INF] POST /api/inventory - Creating new inventory item: Laptopls (Admin only)
+2025-09-22 12:13:32.325 +03:00 [INF] Creating new inventory item: Laptopls
+2025-09-22 12:13:33.228 +03:00 [INF] Successfully created inventory item: Laptopls with ID: 1
+2025-09-22 12:19:32.328 +03:00 [INF] POST /api/inventory - Creating new inventory item: LaptopMo (Admin only)
+2025-09-22 12:19:32.330 +03:00 [INF] Creating new inventory item: LaptopMo
+2025-09-22 12:19:32.482 +03:00 [INF] Successfully created inventory item: LaptopMo with ID: 2

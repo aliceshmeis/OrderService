@@ -1,0 +1,81 @@
+2025-09-19 09:44:44.593 +03:00 [INF] Starting Inventory Service
+2025-09-19 09:44:44.832 +03:00 [INF] Now listening on: https://localhost:5002
+2025-09-19 09:44:44.835 +03:00 [INF] Now listening on: http://localhost:5005
+2025-09-19 09:44:44.839 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-19 09:44:44.841 +03:00 [INF] Hosting environment: Development
+2025-09-19 09:44:44.842 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-19 10:20:59.540 +03:00 [INF] Starting Inventory Service
+2025-09-19 10:20:59.775 +03:00 [INF] Now listening on: https://localhost:5002
+2025-09-19 10:20:59.780 +03:00 [INF] Now listening on: http://localhost:5005
+2025-09-19 10:20:59.785 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-19 10:20:59.787 +03:00 [INF] Hosting environment: Development
+2025-09-19 10:20:59.789 +03:00 [INF] Content root path: C:\Users\alice.shmeis\Desktop\OrderService\InventoryService.API
+2025-09-19 10:24:28.479 +03:00 [INF] GET /api/inventory - Getting all inventory items
+2025-09-19 10:24:28.487 +03:00 [INF] Getting all inventory items
+2025-09-19 10:24:29.649 +03:00 [INF] Successfully retrieved 1 inventory items
+2025-09-19 10:26:26.034 +03:00 [INF] POST /api/inventory - Creating new inventory item: nokia (Admin only)
+2025-09-19 10:26:26.040 +03:00 [INF] Creating new inventory item: nokia
+2025-09-19 10:26:26.126 +03:00 [INF] Successfully created inventory item: nokia with ID: 6
+2025-09-19 10:29:39.768 +03:00 [INF] GET /api/inventory - Getting all inventory items
+2025-09-19 10:29:39.773 +03:00 [INF] Getting all inventory items
+2025-09-19 10:29:40.159 +03:00 [INF] Successfully retrieved 2 inventory items
+2025-09-19 10:36:39.119 +03:00 [INF] GET /api/inventory/6 - Getting item by ID
+2025-09-19 10:36:39.123 +03:00 [INF] Getting inventory item by ID: 6
+2025-09-19 10:36:39.274 +03:00 [INF] Successfully retrieved inventory item with ID: 6
+2025-09-19 10:39:15.597 +03:00 [INF] PUT /api/inventory/6 - Updating inventory item (Admin only)
+2025-09-19 10:39:15.600 +03:00 [INF] Updating inventory item with ID: 6
+2025-09-19 10:39:15.618 +03:00 [WRN] Failed to update item with ID: 6. ErrorCode: 500
+2025-09-19 10:39:45.286 +03:00 [INF] PUT /api/inventory/6 - Updating inventory item (Admin only)
+2025-09-19 10:39:45.288 +03:00 [INF] Updating inventory item with ID: 6
+2025-09-19 10:39:45.292 +03:00 [WRN] Failed to update item with ID: 6. ErrorCode: 500
+2025-09-19 10:44:09.017 +03:00 [INF] GET /api/inventory/6 - Getting item by ID
+2025-09-19 10:44:09.020 +03:00 [INF] Getting inventory item by ID: 6
+2025-09-19 10:44:09.286 +03:00 [INF] Successfully retrieved inventory item with ID: 6
+2025-09-19 10:45:53.472 +03:00 [INF] PUT /api/inventory/6 - Updating inventory item (Admin only)
+2025-09-19 10:45:53.474 +03:00 [INF] Updating inventory item with ID: 6
+2025-09-19 10:45:53.494 +03:00 [WRN] Failed to update item with ID: 6. ErrorCode: 500
+2025-09-19 10:46:15.130 +03:00 [INF] PUT /api/inventory/6 - Updating inventory item (Admin only)
+2025-09-19 10:46:15.132 +03:00 [INF] Updating inventory item with ID: 6
+2025-09-19 10:46:15.145 +03:00 [INF] Successfully updated inventory item with ID: 6
+2025-09-19 10:47:03.440 +03:00 [INF] PUT /api/inventory/6 - Updating inventory item (Admin only)
+2025-09-19 10:47:03.442 +03:00 [INF] Updating inventory item with ID: 6
+2025-09-19 10:47:03.448 +03:00 [INF] Successfully updated inventory item with ID: 6
+2025-09-19 10:47:58.483 +03:00 [INF] PUT /api/inventory/6 - Updating inventory item (Admin only)
+2025-09-19 10:47:58.485 +03:00 [INF] Updating inventory item with ID: 6
+2025-09-19 10:47:58.492 +03:00 [INF] Successfully updated inventory item with ID: 6
+2025-09-19 10:48:28.244 +03:00 [INF] PUT /api/inventory/6 - Updating inventory item (Admin only)
+2025-09-19 10:48:28.247 +03:00 [INF] Updating inventory item with ID: 6
+2025-09-19 10:48:28.265 +03:00 [INF] Successfully updated inventory item with ID: 6
+2025-09-19 10:48:47.824 +03:00 [INF] DELETE /api/inventory/6 - Deleting inventory item (Admin only)
+2025-09-19 10:48:47.827 +03:00 [INF] Deleting inventory item with ID: 6 by user: 6
+2025-09-19 10:48:47.836 +03:00 [INF] Successfully deleted inventory item with ID: 6
+2025-09-19 10:49:06.873 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-19 10:49:06.875 +03:00 [INF] Getting all stock records
+2025-09-19 10:49:06.884 +03:00 [INF] Successfully retrieved 0 stock records
+2025-09-19 10:51:34.780 +03:00 [INF] DELETE /api/inventory/6/stock - Deleting stock for item (Admin only)
+2025-09-19 10:51:34.783 +03:00 [INF] Deleting stock for item ID: 6 by user: 6
+2025-09-19 10:51:35.050 +03:00 [WRN] Stock not found for item ID: 6
+2025-09-19 10:53:03.490 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-19 10:53:03.491 +03:00 [INF] Getting all stock records
+2025-09-19 10:53:03.511 +03:00 [INF] Successfully retrieved 0 stock records
+2025-09-19 10:53:21.476 +03:00 [INF] GET /api/inventory/stocks - Getting all stock records (Admin only)
+2025-09-19 10:53:21.479 +03:00 [INF] Getting all stock records
+2025-09-19 10:53:21.489 +03:00 [INF] Successfully retrieved 0 stock records
+2025-09-19 10:53:41.629 +03:00 [INF] GET /api/inventory - Getting all inventory items
+2025-09-19 10:53:41.631 +03:00 [INF] Getting all inventory items
+2025-09-19 10:53:41.638 +03:00 [INF] Successfully retrieved 1 inventory items
+2025-09-19 10:53:58.800 +03:00 [INF] DELETE /api/inventory/6 - Deleting inventory item (Admin only)
+2025-09-19 10:53:58.804 +03:00 [INF] Deleting inventory item with ID: 6 by user: 6
+2025-09-19 10:53:58.813 +03:00 [WRN] Item not found with ID: 6
+2025-09-19 10:54:12.957 +03:00 [INF] DELETE /api/inventory/3 - Deleting inventory item (Admin only)
+2025-09-19 10:54:12.959 +03:00 [INF] Deleting inventory item with ID: 3 by user: 6
+2025-09-19 10:54:12.985 +03:00 [INF] Successfully deleted inventory item with ID: 3
+2025-09-19 11:17:12.530 +03:00 [INF] GET /api/inventory - Getting all inventory items
+2025-09-19 11:17:12.532 +03:00 [INF] Getting all inventory items
+2025-09-19 11:17:12.725 +03:00 [INF] Successfully retrieved 0 inventory items
+2025-09-19 11:17:50.528 +03:00 [INF] GET /api/inventory - Getting all inventory items
+2025-09-19 11:17:50.531 +03:00 [INF] Getting all inventory items
+2025-09-19 11:17:50.540 +03:00 [INF] Successfully retrieved 0 inventory items
+2025-09-19 11:18:24.339 +03:00 [INF] GET /api/inventory/6 - Getting item by ID
+2025-09-19 11:18:24.342 +03:00 [INF] Getting inventory item by ID: 6
+2025-09-19 11:18:24.354 +03:00 [WRN] Failed to get item with ID: 6. ErrorCode: 500

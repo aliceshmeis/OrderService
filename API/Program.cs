@@ -161,6 +161,7 @@ app.UseCorrelationId();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
+app.MapControllers(); // ADD THIS LINE!
 try
 {
     Log.Information("Starting OrderService on {Environment}", app.Environment.EnvironmentName);

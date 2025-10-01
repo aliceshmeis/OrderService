@@ -213,5 +213,29 @@ namespace OrderService.API.Services
                 return BaseResponse<object>.Error("Database error occurred", 500);
             }
         }
+        public async Task<BaseResponse<IEnumerable<UserListDto>>> GetAllUsersAsync()
+        {
+            try
+            {
+                _logger.LogInformation("Getting all users");
+
+                using var connection = new NpgsqlConnection(_configuration.GetConnectionString("DefaultConnection"));
+
+                var users = await connection.QueryAsync<UserListDto>(
+                    @"SELECT id, username, email, is_admin as IsAdmin, is_active as IsActive, created_date as CreatedDate 
+              FROM ""order"".""login"" 
+              WHERE is_deleted = false 
+              ORDER BY created_date DESC");
+
+                _logger.LogInformation("Successfully retrieved {Count} users", users.Count());
+
+                return BaseResponse<IEnumerable<UserListDto>>.Success(users, "Users retrieved successfully");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error occurred while getting all users");
+                return BaseResponse<IEnumerable<UserListDto>>.Error("An error occurred while retrieving users", 500);
+            }
+        }
     }
 }

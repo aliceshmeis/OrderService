@@ -88,5 +88,26 @@ namespace OrderService.API.Controllers
             _logger.LogInformation("Successful registration for user: {Username}", signUpDto.Username);
             return CreatedAtAction(nameof(SignUp), result);
         }
+        /// <summary>
+        /// Get all users (Admin only)
+        /// </summary>
+        /// <returns>List of all users</returns>
+        [HttpGet("users")]
+        [Authorize(Roles = "Admin")]
+        [ProducesResponseType(typeof(BaseResponse<IEnumerable<UserListDto>>), 200)]
+        [ProducesResponseType(typeof(BaseResponse), 401)]
+        [ProducesResponseType(typeof(BaseResponse), 403)]
+        [ProducesResponseType(typeof(BaseResponse), 500)]
+        public async Task<ActionResult<BaseResponse<IEnumerable<UserListDto>>>> GetAllUsers()
+        {
+            _logger.LogInformation("GET /api/auth/users - Getting all users (Admin only)");
+
+            var result = await _jwtService.GetAllUsersAsync();
+
+            if (result.ErrorCode != 0)
+                return StatusCode(500, result);
+
+            return Ok(result);
+        }
     }
 }

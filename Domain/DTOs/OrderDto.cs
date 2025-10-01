@@ -76,6 +76,17 @@ namespace OrderService.Domain.DTOs
         [MinLength(1, ErrorMessage = "At least one order item is required")]
         public List<CreateOrderItemDto> OrderItems { get; set; } = new List<CreateOrderItemDto>();
     }
+    public class UserListDto
+    {
+        public int Id { get; set; }
+        public string Username { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public bool IsAdmin { get; set; }
+        public bool IsActive { get; set; }
+        public DateTime CreatedDate { get; set; }
+    }
+
+
     public class CancelOrderDto
     {
         public string CancellationReason { get; set; } = string.Empty; // Optional

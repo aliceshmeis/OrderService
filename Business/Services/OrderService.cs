@@ -130,7 +130,7 @@ namespace OrderService.Business.Services
             {
                 _logger.LogInformation("Updating order with ID: {OrderId}", id);
 
-                var result = await _unitOfWork.Orders.UpdateOrderSpAsync(id, orderDto,  userId); // Default user ID
+                var result = await _unitOfWork.Orders.UpdateOrderSpAsync(id, orderDto,  userId); 
                 var jsonElement = (JsonElement)result;
 
                 var errorCode = jsonElement.GetProperty("errorCode").GetInt32();

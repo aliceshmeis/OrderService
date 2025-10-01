@@ -14,7 +14,7 @@ namespace OrderService.API.Controllers
     public class OrdersController : ControllerBase
     {
         private readonly IOrderService _orderService;
-        private readonly ILogger<OrdersController> _logger;
+        private readonly ILogger<OrdersController> _logger;//klo
 
         public OrdersController(IOrderService orderService, ILogger<OrdersController> logger)
         {
@@ -142,10 +142,12 @@ namespace OrderService.API.Controllers
         /// </summary>
         [HttpPut("{id}")]
         [Authorize(Roles = "Admin")]
-        [ProducesResponseType(typeof(BaseResponse<OrderDto>), 200)]
-        [ProducesResponseType(typeof(BaseResponse), 400)]
-        [ProducesResponseType(typeof(BaseResponse), 404)]
-        [ProducesResponseType(typeof(BaseResponse), 500)]
+        [ProducesResponseType(typeof(BaseResponse<OrderDto>), StatusCodes.Status201Created)]//declaration
+        [ProducesResponseType(typeof(BaseResponse<OrderDto>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(BaseResponse<OrderDto>), StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(typeof(BaseResponse<OrderDto>), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(BaseResponse<OrderDto>), StatusCodes.Status409Conflict)]
+        [ProducesResponseType(typeof(BaseResponse<OrderDto>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<BaseResponse<OrderDto>>> UpdateOrder(int id, [FromBody] UpdateOrderDto orderDto)
         {
             _logger.LogInformation("PUT /api/orders/{OrderId} - Updating order (Admin only)", id);
@@ -157,9 +159,12 @@ namespace OrderService.API.Controllers
                     .Select(e => e.ErrorMessage));
                 return BadRequest(BaseResponse.Error($"Validation failed: {errors}", 400));
             }
-            var userId = GetCurrentUserId(); 
+            var userId = GetCurrentUserId();
+            if (userId <= 0)
+                return Unauthorized(BaseResponse<OrderDto>.Error("Invalid user authentication", 401));
 
             var result = await _orderService.UpdateOrderAsync(id, orderDto, userId);
+
 
             if (result.ErrorCode == 404)
                 return NotFound(result);
